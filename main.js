@@ -72,6 +72,14 @@ for (let index = 0; index < GOMBOK.length; index++) {
         GOMBOK[8].classList.add("rkor");
         JATEKOSELEM.innerHTML=""
       }
+      else if(JELTOMBO[2] ===1 && JELTOMBO[4]===1 && JELTOMBO[6]===1){
+        NYERESELEM.innerHTML=nyeres();
+        NYERESELEM.classList.add("nyeresClass")
+        GOMBOK[2].classList.add("rkor");
+        GOMBOK[4].classList.add("rkor");
+        GOMBOK[6].classList.add("rkor");
+        JATEKOSELEM.innerHTML=""
+      }
         
     }else{
         aktualisKlikk.classList.add("x");
@@ -128,6 +136,13 @@ for (let index = 0; index < GOMBOK.length; index++) {
           GOMBOK[6].classList.add("rx");
           GOMBOK[7].classList.add("rx");
           GOMBOK[8].classList.add("rx");
+          JATEKOSELEM.innerHTML=""
+        }else if(JELTOMBX[2] ===1 && JELTOMBX[4]===1 && JELTOMBX[6]===1){
+          NYERESELEM.innerHTML=nyeres();
+          NYERESELEM.classList.add("nyeresClass")
+          GOMBOK[2].classList.add("rx");
+          GOMBOK[4].classList.add("rx");
+          GOMBOK[6].classList.add("rx");
           JATEKOSELEM.innerHTML=""
         }
     }
