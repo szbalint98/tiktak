@@ -1,0 +1,25 @@
+.mezo{
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    margin: auto;
+    border: solid 1px black;
+}
+.mezo button{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+}
+.kor{
+    background-image: url(kepek/O.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.x{
+    background-image:url(kepek/X.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
