@@ -6,15 +6,21 @@ export function jatekter() {
   }
   return txt;
 }
-export function torles(lista){
-  for (let index = 0; index < lista.length; index++) {
-      lista[index].classList.remove("kor")
-      lista[index].classList.remove("x")
-      
-  }
+export function torles(){
+  location.reload()
 }
 export function nyeres(){
   let txt = "";
   txt+="<h1>Nyertél!</h1>"
+  return txt;
+}
+export function jatekos1(){
+  let txt="" 
+  txt+="<h3>1.Játékos köre!</h3>"
+  return txt;
+}
+export function jatekos2(){
+  let txt="" 
+  txt+="<h3>2.Játékos köre!</h3>"
   return txt;
 }
