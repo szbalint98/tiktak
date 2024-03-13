@@ -4,9 +4,8 @@ const NYERESELEM=document.querySelector('#nyeres')
 const JATEKOSELEM=document.querySelector('#jatekos')
 
 JATEKTERELEM.innerHTML=jatekter();
-let gyujto=""
 let valtozo=0
-
+const JELTOMB=[0,0,0,0,0,0,0,0,0]
 JATEKOSELEM.innerHTML+="<h3>1.Játékos köre!</h3>"
 
 
@@ -18,13 +17,19 @@ for (let index = 0; index < GOMBOK.length; index++) {
     if (valtozo%2===0) {
         aktualisKlikk.classList.add("kor");
         JATEKOSELEM.innerHTML=jatekos1()
+        
     }else{
         aktualisKlikk.classList.add("x");
         JATEKOSELEM.innerHTML=jatekos2()
         console.log(aktualisKlikk.id)
-        gyujto+=aktualisKlikk.id
-        console.log(gyujto)
-        if (gyujto==="012" || gyujto==="102"||gyujto==="201"|| gyujto==="120" ||gyujto==="021" ) {
+        JELTOMB[aktualisKlikk.id]+=1
+        if (JELTOMB[0] ===1 && JELTOMB[1]===1 && JELTOMB[2]===1) {
+          NYERESELEM.innerHTML=nyeres();
+          NYERESELEM.classList.add("nyeresClass")
+        }else if(JELTOMB[0] ===1 && JELTOMB[3]===1 && JELTOMB[6]===1){
+          NYERESELEM.innerHTML=nyeres();
+          NYERESELEM.classList.add("nyeresClass")
+        }else if(JELTOMB[0] ===1 && JELTOMB[4]===1 && JELTOMB[8]===1){
           NYERESELEM.innerHTML=nyeres();
           NYERESELEM.classList.add("nyeresClass")
         }
