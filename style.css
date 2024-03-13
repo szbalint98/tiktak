@@ -23,6 +23,16 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.rkor{
+    background-image: url(kepek/piroso.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.rx{
+    background-image:url(kepek/pirosx.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 h1{
     text-align: center;
 }
