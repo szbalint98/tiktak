@@ -1,5 +1,6 @@
-import{ jatekter} from './fuggvenyek.js'
+import{ jatekter, torles} from './fuggvenyek.js'
 const JATEKTERELEM=document.querySelector(".mezo")
+
 JATEKTERELEM.innerHTML=jatekter();
 
 let valtozo=0
@@ -16,3 +17,9 @@ for (let index = 0; index < GOMBOK.length; index++) {
     
   });
 }
+const TORLESGOMB=document.querySelector("#torles")
+TORLESGOMB.addEventListener('click',function(){
+
+    torles(GOMBOK)
+})
+console.log(GOMBOK[2])
